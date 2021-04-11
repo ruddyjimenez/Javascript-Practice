@@ -1,1 +1,1 @@
-# js-password
+# js-password-practice
