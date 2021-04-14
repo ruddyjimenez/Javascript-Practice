@@ -25,12 +25,19 @@ const nightClubRegister = [
     }
 ]
 
-let name = null;
+let name = '';
 
 for (let i = 0; i < nightClubRegister.length; i++) {
-     if(nightClubRegister[i] <= 21) {
-        console.log('Mr. ' + name + ' , you are not old enough, you cannot enter.')
-    } else if (nightClubRegister[i] >= 22) {
-        console.log('Mr. ' + name + ' , you are old enough, you can enter')
-    
+     if(nightClubRegister[i].age <= 21 && nightClubRegister[i].gender === 'male') {
+        console.log('Mr. ' + nightClubRegister[i].name + ' , you are not old enough, you cannot enter.')
+    } else if (nightClubRegister[i].age >= 22 && nightClubRegister[i].gender === 'male') {
+        console.log('Mr. ' + nightClubRegister[i].name + ' , you are old enough, you can enter')
+    } else if(nightClubRegister[i].age <= 21 && nightClubRegister[i].gender === 'female') {
+        console.log('Ms. ' + nightClubRegister[i].name + ' , you are not old enough, you cannot enter.')
+    } else if (nightClubRegister[i].age >= 22 && nightClubRegister[i].gender === 'female') {
+        console.log('Ms. ' + nightClubRegister[i].name + ' , you are old enough, you can enter')
+    }
 }
+
+//console.log(nightClubRegister)
+//This log is for testing-only purposes.
