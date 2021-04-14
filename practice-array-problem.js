@@ -25,7 +25,7 @@ const nightClubRegister = [
     }
 ]
 
-let name = '';
+//let name = ''; <<--Not needed (testing-only)
 
 for (let i = 0; i < nightClubRegister.length; i++) {
      if(nightClubRegister[i].age <= 21 && nightClubRegister[i].gender === 'male') {
