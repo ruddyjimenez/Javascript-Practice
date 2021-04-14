@@ -28,8 +28,9 @@ const nightClubRegister = [
 let name = null;
 
 for (let i = 0; i < nightClubRegister.length; i++) {
-     if(nightClubRegister[i] <= 21)
+     if(nightClubRegister[i] <= 21) {
         console.log('Mr. ' + name + ' , you are not old enough, you cannot enter.')
-    } else (nightClubRegister[i] >= 22) {
+    } else if (nightClubRegister[i] >= 22) {
         console.log('Mr. ' + name + ' , you are old enough, you can enter')
+    
 }
